@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Disco Licencing
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Apply online for a Disco licence
+
+
+        <span class="govuk-caption-xl">{{VD1sc0}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        You can apply for, renew, replace or update your disco licence and pay for it online.
+      </p>
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Which types of Disco licence are you applying for?
+      </h1>
+    </legend>
+    <span id="waste-hint" class="govuk-hint">
+      Select all that apply.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+          Master Disco
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+           Apprentice Disco
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+           Disco Novice
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+</a>
+      </button>
+      <p>
+        Disco, Disco, ooo yeah, Disco, Disco, ooo yeah!
+      </p>
+
+      <h2 class="govuk-heading-m"></h2>
+      <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Help with selecting licence type
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    We need to know your Disco level so we can work out which licence you are eligible for. If you can’t provide your Disco level, you’ll have to send copies of groovy moves through the post.
+  </div>
+</details>
+
+    
+      <h2 class="govuk-heading-m">Examples and documentation</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
+        <li>
+          <a href="https://design-system.service.gov.uk">
+            GOV.UK Design System
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}
